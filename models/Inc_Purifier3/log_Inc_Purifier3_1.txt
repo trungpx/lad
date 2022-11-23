@@ -1,0 +1,52 @@
+run: 1
+2019-04-09 19:08
+model type: INC
+model name: Inc_Purifier3
+comment: 
+### Hyper-parameters ###
+total_train: 342176
+total_test: 38019
+batch_size: 64
+validate_every: 5346
+validate_for: 594
+save_every: 16038
+total_steps: 320760
+n_filters: [16, 32, 128, 128, 256, 256]
+filter_sizes: [3, 3, 3, 3, 3, 3]
+max_pool: [1, 1, 1, 1, 1, 1]
+fc_layers: [256, 128]
+learning_rate: [0.001, 0.0009, 0.0006, 0.0003, 0.0001, 5e-05, 1e-05, 5e-06, 1e-06]
+decay_rate: 0.96
+decay_step: 26730
+optimizer: ADAM
+keep_prob: 0.85
+MAX_GRADIANT_NORM: 5.0
+l2_beta: 0.0005
+input_width: 192
+input_height: 192
+input_channel: 1
+output_dim: 3
+output_weights: [1.0, 1.0, 1.0, 1.0, 0.5]
+prob_downscale: 0.75
+max_downscale: 0.95
+min_downscale: 0.5
+prob_reflection: 0.25
+min_reflection: 0.25
+max_reflection: 0.75
+prob_blur: 0.25
+min_blurSize: 3
+max_blurSize: 9
+min_sigmaRatio: 0.25
+max_sigmaRatio: 0.75
+min_occlusion: 0.05
+max_occlusion: 0.25
+occlusion_max_obj: 6
+prob_exposure: 0.25
+min_exposure: 0.7
+max_exposure: 1.2
+crop_probability: 0.5
+crop_min_ratio: 0.5
+crop_max_ratio: 0.95
+flip_probability: 0.5
+prob_pupil: 0.25
+### OUTPUTS ###
