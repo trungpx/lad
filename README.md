@@ -32,5 +32,5 @@ title={LAD: A Hybrid Deep Learning System for Benign Paroxysmal Positional Verti
 year={2022}, \
 volume={10}, \
 pages={113995-114007}, \
-doi={10.1109/ACCESS.2022.3215625}
+doi={10.1109/ACCESS.2022.3215625} \
 }
