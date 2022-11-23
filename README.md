@@ -1,4 +1,4 @@
-Partial source code for paper: [LAD: A Hybrid Deep Learning System for Benign Paroxysmal Positional Vertigo Disorders Diagnostic] (https://ieeexplore.ieee.org/document/9924165), IEEE Access 2022.
+Partial source code for paper: [LAD: A Hybrid Deep Learning System for Benign Paroxysmal Positional Vertigo Disorders Diagnostic](https://ieeexplore.ieee.org/document/9924165), IEEE Access 2022.
 # Using the pupil location to detect the horizontal and vertical beatings. Real time pupil detection in noisy images
 
 Finding pupil location inside the eye image is the prerequisite for eye tracking. A baseline is a hybrid model by inspiring YOLO, Network in Network and using Inception as the core CNN to predict the pupil location inside the image of the eye.
