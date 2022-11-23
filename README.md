@@ -23,3 +23,13 @@ There are some demos videos for beating detected of each eye with *.avi format i
 This work was supported in part by the Institute for Information \& communications Technology Promotion (IITP) grant funded by the Korean government (MSIT) (No. 2021-0-01381, Development of Causal AI through Video Understanding) and was partly supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. 2022R1A2C201270611).
 
 Code base for pupil locator was adopted from this [repo](https://github.com/isohrab/Pupil-locator).
+
+### Cite this paper:
+@ARTICLE{pham2022lad,
+author={Pham, Trung Xuan and Choi, Jin Woong and Mina, Rusty John Lloyd and Nguyen, Thanh Xuan and Madjid, Sultan Rizky and Yoo, Chang D.},
+journal={IEEE Access},
+title={LAD: A Hybrid Deep Learning System for Benign Paroxysmal Positional Vertigo Disorders Diagnostic},
+year={2022},
+volume={10},
+pages={113995-114007}, 
+doi={10.1109/ACCESS.2022.3215625}}
