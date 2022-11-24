@@ -173,8 +173,6 @@ def main(write_output=True):
                 
                 # change coordinate to O'xy
                 x1 = loc[1]; y1 = loc[0]-120;
-                #x_temp_new.append(loc[1])
-                #y_temp_new.append(loc[0]-120)
                 # computer distance or norm of vector PI
                 vector = np.array([y1-y_pupil_new[i], x1-x_pupil_new[i]])
                 norm = np.linalg.norm(vector)
