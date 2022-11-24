@@ -245,8 +245,7 @@ def main(write_output=True):
 
 if __name__ == "__main__":
     class_ = argparse.ArgumentDefaultsHelpFormatter
-    parser = argparse.ArgumentParser(description=__doc__,
-                                     formatter_class=class_)
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=class_)
 
     parser.add_argument('--model_type', help="INC, YOLO, simple", default="INC")
 
