@@ -237,7 +237,6 @@ def main(write_output=True):
         # close the video
         cv2.destroyAllWindows()
         video.release()
-        #ipdb.set_trace()
         np.savetxt('degree.txt',degree,fmt='%f')
         np.savetxt('degree_cartesian.txt',np.array(degree)*180/np.pi,fmt='%f')
     print("Done...")
@@ -257,8 +256,7 @@ if __name__ == "__main__":
                         help="name of saved model (3A4Bh-Ref25)",
                         default="3A4Bh-Ref25")
 
-    parser.add_argument('video_path',
-                        help="path to video file, empty for camera")
+    parser.add_argument('video_path', help="path to video file, empty for camera")
 
     args = parser.parse_args()
 
