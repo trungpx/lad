@@ -121,7 +121,7 @@ def main(write_output=True):
         video = cv2.VideoWriter("predicted_video_torsion.avi", cv2.VideoWriter_fourcc(*"XVID"), 30, (video_size[1], video_size[0]))
         #video = cv2.VideoWriter("predicted_video.avi", cv2.VideoWriter_fourcc('M','J','P','G'), 30, (video_size[1], video_size[0]))
 
-        n = len(preds)
+        # n = len(preds)
         x = np.array(preds)[:,1]
         y = np.array(preds)[:,0]
         r = np.array(preds)[:,2]
