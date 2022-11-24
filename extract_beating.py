@@ -257,7 +257,6 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
 def main(m_type, m_name, logger, video_path=None, video_range=None):
     
     with tf.Session() as sess:
-        #ipdb.set_trace()
         # load best model
         left_eyes = [2,120,160,320]
         right_eyes = [2,120,0,160]
@@ -285,8 +284,7 @@ def main(m_type, m_name, logger, video_path=None, video_range=None):
                 beat_right = detect_beat(model,sess,video_path,right_eyes)
                 f = open(filename, 'wb'); pickle.dump([beat_left,beat_right], f); f.close()
                 print("Elapsed: %.2fs"%(time.time()-t0))
-                #ipdb.set_trace()
-        ipdb.set_trace()
+        # ipdb.set_trace()
     
     '''
     with tf.Session() as sess:
