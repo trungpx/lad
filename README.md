@@ -28,7 +28,7 @@ There are demos videos for beating detected of each eye with *.avi format in thi
 ### Acknowledgement 
 This work was supported in part by the Institute for Information \& communications Technology Promotion (IITP) grant funded by the Korean government (MSIT) (No. 2021-0-01381, Development of Causal AI through Video Understanding) and was partly supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. 2022R1A2C201270611).
 
-Code base for pupil locator was adopted from this [repo](https://github.com/isohrab/Pupil-locator).
+Codebase for pupil locator was adopted from this [repo](https://github.com/isohrab/Pupil-locator).
 
 ### Cite this paper:
 @ARTICLE{pham2022lad, \
