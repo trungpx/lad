@@ -248,12 +248,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=class_)
 
-    parser.add_argument('--model_type',
-                        help="INC, YOLO, simple",
-                        default="INC")
+    parser.add_argument('--model_type', help="INC, YOLO, simple", default="INC")
 
-    parser.add_argument('--model_name',
-                        help="name of saved model (3A4Bh-Ref25)",
+    parser.add_argument('--model_name', help="name of saved model (3A4Bh-Ref25)",
                         default="3A4Bh-Ref25")
 
     parser.add_argument('video_path', help="path to video file, empty for camera")
