@@ -4,7 +4,7 @@ import time
 import cv2
 import numpy as np
 import tensorflow as tf
-import ipdb
+# import ipdb
 
 from config import config
 from logger import Logger
