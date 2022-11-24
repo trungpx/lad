@@ -108,14 +108,8 @@ def main(model_type, model_name, logger):
 
             # init augmentor only once for both train and validation set
             ag = Augmentor('data/noisy_videos/', config)
-            train_batches = train_batchizer.batches(ag,
-                                                    config["output_dim"],
-                                                    num_c=config["input_channel"],
-                                                    zero_mean=True)
-            valid_batches = valid_batchizer.batches(ag,
-                                                    config["output_dim"],
-                                                    num_c=config["input_channel"],
-                                                    zero_mean=True)
+            train_batches = train_batchizer.batches(ag, config["output_dim"], num_c=config["input_channel"], zero_mean=True)
+            valid_batches = valid_batchizer.batches(ag, config["output_dim"], num_c=config["input_channel"], zero_mean=True)
 
             while model.global_step.eval() < config["total_steps"]:
                 # get the learning rate from config file
