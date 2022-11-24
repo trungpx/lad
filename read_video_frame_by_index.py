@@ -15,6 +15,7 @@ if myFrameNumber >= 0 & myFrameNumber <= totalFrames:
     cap.set(cv2.CAP_PROP_POS_FRAMES,myFrameNumber)
 #ipdb.set_trace()
 
+# starting read each video frame using videocapture
 while True:
     ret, frame = cap.read()
     current_frame = cap.get(cv2.CAP_PROP_POS_FRAMES)
