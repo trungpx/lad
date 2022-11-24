@@ -169,9 +169,7 @@ def main(model_type, model_name, logger):
                 train_mean_loss = np.mean(train_loss)
                 valid_mean_loss = np.mean(valid_loss)
                 logger.log(
-                    'Step:{0:6}: avg train loss:{1:2.8f}, avg validation loss:{2:2.8f}'.format(model.global_step.eval(),
-                                                                                               train_mean_loss,
-                                                                                               valid_mean_loss))
+                    'Step:{0:6}: avg train loss:{1:2.8f}, avg validation loss:{2:2.8f}'.format(model.global_step.eval(), train_mean_loss, valid_mean_loss))
 
                 # save a checkpoint with the best loss value
                 if valid_mean_loss < logger.best_loss:
@@ -179,8 +177,7 @@ def main(model_type, model_name, logger):
                     best_path = os.path.join(model.model_dir, "best_loss/")
                     check_dir(best_path)
                     save_path = best_saver.save(sess, best_path, global_step=model.global_step)
-                    logger.log("model saved with best loss {0} at {1}".format(valid_mean_loss,
-                                                                              save_path))
+                    logger.log("model saved with best loss {0} at {1}".format(valid_mean_loss, save_path))
 
                 # save_every and validate_every should be dividable, otherwise this step will jump
                 if model.global_step.eval() % config["save_every"] == 0:
@@ -191,6 +188,7 @@ def main(model_type, model_name, logger):
                 summary.value.add(tag="valid_loss", simple_value=valid_mean_loss)
 
                 log_writer.add_summary(summary, model.global_step.eval())
+                # re-initializing lists
                 train_loss = []
                 valid_loss = []
 
