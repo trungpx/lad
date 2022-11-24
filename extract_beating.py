@@ -181,7 +181,6 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
                         counter2 = 1
                         v_up = (B-A)/counter1
                         if counter1<frame_thres and v_up>v_thres and v_up<v_max: # show text in frames
-                            #diff = np.abs(preds[i-counter1+1][2]-preds[i][2])
                             diff = np.abs(preds[i-1][2]-preds[i][2])
                             diff1 = np.abs(preds[i-2][2]-preds[i-1][2])
                             if(diff < abs_r_thres/4 and v_up>v_down and diff1 < abs_r_thres/4):
@@ -230,7 +229,6 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
                         counter1_hor = 1
                         v_left = (B_hor-A_hor)/counter2_hor
                         if counter2_hor<frame_thres and v_left>v_thres and v_left<v_max: # show text in frames
-                            #diff = np.abs(preds[i-counter2_hor+1][2]-preds[i][2])
                             diff = np.abs(preds[i-1][2]-preds[i][2])
                             diff1 = np.abs(preds[i-2][2]-preds[i-1][2])
                             if(diff < abs_r_thres and v_left>v_right and diff1 < abs_r_thres):
@@ -244,18 +242,6 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
                 else:
                     print('3 sucessive frames have eye closed')
                     counter1 = 1; counter2 = 1; counter1_hor = 1; counter2_hor = 1;
-            #visualize
-            """
-            labeled_img = cv2.putText(labeled_img,'Down-beating: {}'.format(count_down),(3,25),cv2.FONT_HERSHEY_SIMPLEX,.3,(0, 250, 0),1)
-            labeled_img = cv2.putText(labeled_img,'Up-beating: {}'.format(count_up),(3,40),cv2.FONT_HERSHEY_SIMPLEX,.3,(0, 250, 0),1)
-            labeled_img = cv2.putText(labeled_img,'Right-beating: {}'.format(count_right),(3,55),cv2.FONT_HERSHEY_SIMPLEX,.3,(0, 250, 0),1)
-            labeled_img = cv2.putText(labeled_img,'Left-beating: {}'.format(count_left),(3,70),cv2.FONT_HERSHEY_SIMPLEX,.3,(0, 250, 0),1)
-            cv2.imshow('labeled_img',labeled_img)
-            cv2.waitKey(20)
-            """
-            #cv2.destroyAllWindows()
-            #video.write(labeled_img)
-    #video.release()
     toc = time.time()
     cap.release()
     print("{0:0.2f} FPS".format(counter / (toc - tic)))
