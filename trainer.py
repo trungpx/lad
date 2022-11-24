@@ -197,20 +197,11 @@ def main(model_type, model_name, logger):
 
 if __name__ == "__main__":
     class_ = argparse.ArgumentDefaultsHelpFormatter
-    parser = argparse.ArgumentParser(description=__doc__,
-                                     formatter_class=class_)
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=class_)
 
-    parser.add_argument('model_name',
-                        help="name of saved model (3A4Bh-Ref25)",
-                        )
-
-    parser.add_argument('--model_type',
-                        help="INC, YOLO, simple",
-                        default="INC")
-
-    parser.add_argument('--model_message',
-                        help="briefly explain your model",
-                        default="none")
+    parser.add_argument('model_name', help="name of saved model (3A4Bh-Ref25)")
+    parser.add_argument('--model_type', help="INC, YOLO, simple", default="INC")
+    parser.add_argument('--model_message', help="briefly explain your model", default="none")
 
     args = parser.parse_args()
 
