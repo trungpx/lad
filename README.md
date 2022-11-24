@@ -2,7 +2,7 @@
 **Authors**: Trung Xuan Pham, Jin Woong Choi, Rusty John Lloyd Mina, Thanh Nguyen, Sultan Rizky Madjid, and Chang Dong Yoo.
 
 Overall system for BPPV diagnosis process using artificial intelligent:
-![Network]([http://url/to/img.png](https://github.com/trungpx/lad/blob/main/images/bppv_diagnosis.png))
+![Network](https://github.com/trungpx/lad/blob/main/images/bppv_diagnosis.png)
 
 ### Using the pupil location to detect the horizontal and vertical beatings. Real time pupil detection in noisy images
 
