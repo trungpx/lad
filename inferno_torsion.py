@@ -232,11 +232,6 @@ def main(write_output=True):
             labeled_img = cv2.putText(labeled_img,'Down-beating: {}'.format(count_up),(3,25),cv2.FONT_HERSHEY_SIMPLEX,.3,(0, 250, 0),1)
             labeled_img = cv2.putText(labeled_img,'Up-beating: {}'.format(count_down),(3,40),cv2.FONT_HERSHEY_SIMPLEX,.3,(0, 250, 0),1)
 
-            # visualize
-            #cv2.imshow('Img',labeled_img)
-            #cv2.waitKey(20)
-            ###
-            
             video.write(labeled_img)
 
         # close the video
