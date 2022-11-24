@@ -115,9 +115,7 @@ def main(write_output=True):
         frames, preds = pickle.load(f)
     # get the video size
     video_size = frames[0].shape[0:2]
-    
-    #ipdb.set_trace()
-    
+        
     if write_output:
         # prepare a video write to show the result
         video = cv2.VideoWriter("predicted_video_torsion.avi", cv2.VideoWriter_fourcc(*"XVID"), 30, (video_size[1], video_size[0]))
@@ -130,7 +128,6 @@ def main(write_output=True):
         
         #init A to the first value of gaze x
         counter1 = 2; counter2 = 2;
-        down = 0; up = 0; right = 0; left = 0;
         A = x[0]; B = 0; C = 0
         v_down = 0; v_up = 0; SPV = 0
         count_up = 0; count_down = 0;
