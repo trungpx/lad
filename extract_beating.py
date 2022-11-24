@@ -120,22 +120,22 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
     B = 0; C = 0
     v_down = 0; v_up = 0; SPV = 0
     count_up = 0; count_down = 0
-    cum_SPV = []
+    # cum_SPV = []
     # initialize for left/right beating
     counter1_hor = 1; counter2_hor = 1; right = 0; left = 0
     B_hor = 0; C_hor = 0
     v_left = 0; v_right = 0; SPV_hor = 0
     count_left = 0; count_right = 0
-    cum_SPV_hor = []
+    # cum_SPV_hor = []
     v_thres = 0.80
     frame_thres = 5
     r_thres = 18 #15
     abs_r_thres = 4.0 # check difference of 2 frames
     v_max = 10.0
-    norm_thres = 4.0
+    # norm_thres = 4.0
     all_down,all_up,all_right,all_left = [],[],[],[]
     beat_frame = []
-    frame_diff = 8
+    # frame_diff = 8
     
     while ret:
         ret, frame = cap.read()
@@ -154,7 +154,6 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
             preds.append([x1, y1, w])
             counter += 1
             i = counter-1; r = w
-            #labeled_img = annotator((0, 250, 0), frames[counter-1], *preds[counter-1])
             if i==0:
                 A = y1 # init A to the first value of gaze x
                 A_hor = x1 # init A to the first value of gaze y
