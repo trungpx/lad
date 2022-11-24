@@ -158,14 +158,6 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
             if i==0:
                 A = y1 # init A to the first value of gaze x
                 A_hor = x1 # init A to the first value of gaze y
-                video_size = frames[0].shape[0:2]
-                #video = cv2.VideoWriter("predicted_video_test.avi", cv2.VideoWriter_fourcc(*"XVID"), 30, (video_size[1], video_size[0]))
-            """
-            if (preds[i][2]<r_thres):
-                labeled_img = cv2.putText(labeled_img,'Eye closed, frame[{}]'.format(i+1),(3,10),cv2.FONT_HERSHEY_SIMPLEX,.3,(0, 250, 0),1)
-            else:
-                labeled_img = cv2.putText(labeled_img,'Eye opened, frame[{}]'.format(i+1),(3,10),cv2.FONT_HERSHEY_SIMPLEX,.3,(0, 250, 0),1)
-            """
             # start detecting the nystagmus down-beating, up-beating, left-beating, right-beating
             if i>=2:
                 if preds[i-2][2]>r_thres and preds[i-1][2]>r_thres and preds[i][2]>r_thres:
