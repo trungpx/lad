@@ -108,10 +108,9 @@ def upscale_preds(_preds, _shapes):
 
     return x, y, w
 
-
 # load a the model with the best saved state from file and predict the pupil location
 # on the input video. finaly save the video with the predicted pupil on disk
-def main(m_type, m_name, logger, video_path=None, write_output=True):
+def main(write_output=True):
     """
     with tf.Session() as sess:
         # load best model
