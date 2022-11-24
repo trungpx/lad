@@ -1,5 +1,5 @@
 **Partial source code for paper**: [LAD: A Hybrid Deep Learning System for Benign Paroxysmal Positional Vertigo Disorders Diagnostic](https://ieeexplore.ieee.org/document/9924165), IEEE Access, 10/2022. \
-**Authors**: Trung Xuan Pham, Jin Woong Choi, Rusty John Lloyd Mina, Thanh Nguyen, Sultan Rizky Madjid, and Chang Dong Yoo.
+**Authors**: [Trung Xuan Pham](https://scholar.google.com/citations?user=4DkPIIAAAAAJ), Jin Woong Choi, Rusty John Lloyd Mina, Thanh Nguyen, Sultan Rizky Madjid, and Chang Dong Yoo.
 
 Overall system for BPPV diagnosis process using artificial intelligent:
 ![Network](https://github.com/trungpx/lad/blob/main/images/bppv_diagnosis.png)
