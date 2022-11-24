@@ -81,9 +81,7 @@ class Simple(object):
         self.logits = tf.contrib.layers.fully_connected(a, self.cfg["output_dim"], activation_fn=None)
         # self.logits = tf.reshape(cnn_input, shape=(-1, self.cfg["output_dim"]))
 
-        self.loss = tf.losses.mean_squared_error(self.Y,
-                                                 self.logits,
-                                                 weights=[self.cfg["output_weights"][0:self.cfg["output_dim"]]])
+        self.loss = tf.losses.mean_squared_error(self.Y, self.logits, weights=[self.cfg["output_weights"][0:self.cfg["output_dim"]]])
 
         # Training summary for the current batch_loss
         tf.summary.scalar('loss', self.loss)
@@ -121,6 +119,8 @@ class YOLO(BaseModel):
             x = tf.layers.batch_normalization(x, training=train_logical)
 
             x = tf.nn.leaky_relu(x, alpha=0.1, name="ReLu")
+            if False:
+                x = tf.nn.dropout(x, keep_prob=self.keep_prob)
         return x
 
     def passthrough_layer(self, a, b, kernel, depth, size, train_logical, name):
