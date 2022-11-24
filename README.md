@@ -10,15 +10,13 @@ We developed the algorithm using the detected pupil positions in the given video
 ### Run model
 to predict the pupil location in a video, and detect the beatings, use the command:
 ```
-python inferno.py PATH_TO_VIDEO_FILE
-
 to run for beating detection, execute the below command:
 # bash detect_beating.sh
 
 ```
 
 ### Demos
-There are some demos videos for beating detected of each eye with *.avi format in this repo.
+There are demos videos for beating detected of each eye with *.avi format in this repo.
 
 ### Acknowledgement 
 This work was supported in part by the Institute for Information \& communications Technology Promotion (IITP) grant funded by the Korean government (MSIT) (No. 2021-0-01381, Development of Causal AI through Video Understanding) and was partly supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. 2022R1A2C201270611).
