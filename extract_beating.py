@@ -194,7 +194,6 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
                         counter1 = 1
                         v_down = (B-A)/counter2
                         if counter2<frame_thres and v_down>v_thres and v_down<v_max: # show text in frames
-                            #diff = np.abs(preds[i-counter2+1][2]-preds[i][2])
                             diff = np.abs(preds[i-1][2]-preds[i][2])
                             diff1 = np.abs(preds[i-2][2]-preds[i-1][2])
                             if(diff < abs_r_thres/4 and v_down>v_up and diff1 < abs_r_thres/4):
@@ -215,7 +214,6 @@ def detect_beat(model,sess,video_path=None,coordinates=None):
                         counter2_hor = 1
                         v_right = (B_hor-A_hor)/counter1_hor
                         if counter1_hor<frame_thres and v_right>v_thres and v_right<v_max: # show text in frames
-                            #diff = np.abs(preds[i-counter1_hor+1][2]-preds[i][2])
                             diff = np.abs(preds[i-1][2]-preds[i][2])
                             diff1 = np.abs(preds[i-2][2]-preds[i-1][2])
                             if(diff < abs_r_thres and v_right>v_left and diff1 < abs_r_thres):
