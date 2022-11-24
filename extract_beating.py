@@ -301,9 +301,7 @@ if __name__ == "__main__":
     model_type = args.model_type
     video_path = args.video_path
     video_range = args.range
-    
-    #ipdb.set_trace()
-    
+        
     # initial a logger
     logger = Logger(model_type, model_name, "", config, dir="models/")
     logger.log("Start inferring model...")
