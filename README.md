@@ -31,7 +31,7 @@ This work was supported in part by the Institute for Information \& communicatio
 Codebase for pupil locator was adopted from this [repo](https://github.com/isohrab/Pupil-locator).
 
 ### Cite this paper:
-@ARTICLE{pham2022lad, \
+@article{pham2022lad, \
 author={Pham, Trung Xuan and Choi, Jin Woong and Mina, Rusty John Lloyd and Nguyen, Thanh Xuan and Madjid, Sultan Rizky and Yoo, Chang D.}, \
 journal={IEEE Access}, \
 title={LAD: A Hybrid Deep Learning System for Benign Paroxysmal Positional Vertigo Disorders Diagnostic}, \
