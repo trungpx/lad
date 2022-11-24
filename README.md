@@ -37,7 +37,6 @@ author={Pham, Trung Xuan and Choi, Jin Woong and Mina, Rusty John Lloyd and Nguy
 journal={IEEE Access}, \
 year={2022}, \
 volume={10}, \
-publisher={IEEE}, \
 pages={113995-114007}, \
 doi={10.1109/ACCESS.2022.3215625} \
 }
