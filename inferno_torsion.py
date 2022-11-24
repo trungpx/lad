@@ -9,7 +9,7 @@ import tensorflow as tf
 from config import config
 from logger import Logger
 from models import Simple, NASNET, Inception, GAP, YOLO
-from utils import annotator, change_channel, gray_normalizer
+from utils import annotator
 import pickle
 
 def load_model(session, m_type, m_name, logger):
