@@ -108,63 +108,7 @@ def upscale_preds(_preds, _shapes):
 
     return x, y, w
 
-
-# load a the model with the best saved state from file and predict the pupil location
-# on the input video. finaly save the video with the predicted pupil on disk
-def main(m_type, m_name, logger, video_path=None, write_output=True):
-    """
-    with tf.Session() as sess:
-        # load best model
-        model = load_model(sess, m_type, m_name, logger)
-        # check input source is a file or camera
-        if video_path == None:
-            video_path = 0
-        # load the video or camera
-        cap = cv2.VideoCapture(video_path)
-        ret = True
-        counter = 0
-        tic = time.time()
-        frames = []
-        preds = []
-
-        while ret:
-            ret, frame = cap.read()
-
-            if ret:
-                # Our operations on the frame come here
-                frames.append(frame)
-                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                f_shape = frame.shape
-                if frame.shape[0] != 192:
-                    frame = rescale(frame)
-                image = gray_normalizer(frame)
-                image = change_channel(image, config["input_channel"])
-                [p] = model.predict(sess, [image])
-                x, y, w = upscale_preds(p, f_shape)
-
-                preds.append([x, y, w])
-                
-                counter += 1
-                
-                #test
-                '''
-                img = annotator((0, 250, 0), frame, *preds[counter-1])
-                
-                if (w<14):
-                    img = cv2.putText(img,'Eye closed',(10,20),cv2.FONT_HERSHEY_SIMPLEX,.5,(0, 250, 0),1)
-
-                cv2.imshow('Img',img)
-                cv2.waitKey(20)
-                '''
-                
-        toc = time.time()
-        print("{0:0.2f} FPS".format(counter / (toc - tic)))
-
-    """
-    # saving the objects:
-    #with open('objs.pkl', 'wb') as f:
-        #pickle.dump([frames, preds], f)
-    # getting back the objects:
+def main(write_output=True):
     with open('objs.pkl', 'rb') as f:
         frames, preds = pickle.load(f)
     # get the video size
@@ -332,4 +276,4 @@ if __name__ == "__main__":
     logger = Logger(model_type, model_name, "", config, dir="models/")
     logger.log("Start inferring model...")
 
-    main(model_type, model_name, logger, video_path)
+    main(video_path)
