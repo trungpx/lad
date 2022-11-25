@@ -22,7 +22,13 @@ bash detect_beating.sh
 
 ### Demos
 There are demos videos for beating detected of each eye with *.avi format in this repo.
-[![Watch the video](https://github.com/trungpx/lad/blob/main/fig03.png)](https://github.com/trungpx/lad/blob/main/predicted_video_torsion.avi)
+
+https://user-images.githubusercontent.com/37993448/203952786-b8174bcf-9799-4c48-ac7b-09c040eb6c23.mp4
+
+
+https://user-images.githubusercontent.com/37993448/203953351-eb03cca9-1b6c-439a-8b7f-8637fcf24a00.mp4
+
+
 
 ### Acknowledgement 
 This work was supported in part by the Institute for Information \& communications Technology Promotion (IITP) grant funded by the Korean government (MSIT) (No. 2021-0-01381, Development of Causal AI through Video Understanding) and was partly supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. 2022R1A2C201270611).
