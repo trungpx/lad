@@ -4,7 +4,7 @@
 Overall system for BPPV diagnosis process using artificial intelligent:
 ![Network](https://github.com/trungpx/lad/blob/main/images/bppv_diagnosis.png)
 
-Seven postures for patient setup with Dix-Hallpike manoveurs:
+Seven postures for patient setup with Dix-Hallpike manoveurs: \
 ![Postures](https://github.com/trungpx/lad/blob/main/images/postures.png)
 
 ### Using the pupil location to detect the horizontal and vertical beatings. Real time pupil detection in noisy images
