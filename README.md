@@ -19,7 +19,6 @@ to predict the pupil location in a video, and detect the beatings, use the comma
 ```
 to run for beating detection, execute the below command:
 # bash detect_beating.sh
-
 ```
 
 ### Demos
