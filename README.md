@@ -15,10 +15,9 @@ From the [repo](https://github.com/isohrab/Pupil-locator), finding pupil locatio
 We developed the algorithm using the detected pupil positions in the given videos to get exact the time/frames when the beating happens, i.e. horizontal and vertival beatings, which are crucial for diagnosis of BPPV types.
 
 ### Run model
-to predict the pupil location in a video, and detect the beatings, use the command:
-```
 to run for beating detection, execute the below command:
-# bash detect_beating.sh
+```
+bash detect_beating.sh
 ```
 
 ### Demos
