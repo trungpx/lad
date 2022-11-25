@@ -21,7 +21,7 @@ bash detect_beating.sh
 ```
 
 ### Demos
-There are demos videos for beating detected of each eye with *.avi format in this repo. Below are examples:
+There are demos videos for beating detected of each eye with *.avi or *.mp4 format in this repo. Below are examples:
 
 https://user-images.githubusercontent.com/37993448/203952786-b8174bcf-9799-4c48-ac7b-09c040eb6c23.mp4
 
