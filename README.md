@@ -32,14 +32,14 @@ Codebase for pupil locator was adopted from this [repo](https://github.com/isohr
 
 ### Cite this paper ([Goolge Scholar](https://scholar.google.com/scholar?cluster=5944041991038126099&hl=en&as_sdt=2005)):
 ```
-@article{pham2022lad, \
-title={LAD: A Hybrid Deep Learning System for Benign Paroxysmal Positional Vertigo Disorders Diagnostic}, \
-author={Pham, Trung Xuan and Choi, Jin Woong and Mina, Rusty John Lloyd and Nguyen, Thanh Xuan and Madjid, Sultan Rizky and Yoo, Chang D.}, \
-journal={IEEE Access}, \
-year={2022}, \
-volume={10}, \
-pages={113995-114007}, \
-doi={10.1109/ACCESS.2022.3215625} \
+@article{pham2022lad,
+title={LAD: A Hybrid Deep Learning System for Benign Paroxysmal Positional Vertigo Disorders Diagnostic},
+author={Pham, Trung Xuan and Choi, Jin Woong and Mina, Rusty John Lloyd and Nguyen, Thanh Xuan and Madjid, Sultan Rizky and Yoo, Chang D.},
+journal={IEEE Access},
+year={2022},
+volume={10},
+pages={113995-114007},
+doi={10.1109/ACCESS.2022.3215625}
 }
 ```
 
